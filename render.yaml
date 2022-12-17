@@ -28,7 +28,5 @@ services:
         sync: false
       - key: DB_TABLE_PREFIX
         value: alist_
-      - key: DB_SSL_MODE
-        value: true
       - key: CDN
         value: https://npm.elemecdn.com/alist-web@$version/dist
