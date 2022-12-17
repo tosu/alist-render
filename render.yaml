@@ -11,14 +11,12 @@ services:
       - key: PORT
         value: 5244
       - key: DB_TYPE
-        # value: sqlite3
-        sync: false
+        value: mysql
       - key: DB_HOST
         # value: db_host
         sync: false
       - key: DB_PORT
-        # value: 3306
-        sync: false
+        value: 3306
       - key: DB_USER
         # value: db_user
         sync: false
@@ -26,11 +24,11 @@ services:
         # value: db_password
         sync: false
       - key: DB_NAME
-        # value: db_name
+        # value: alist
         sync: false
       - key: DB_TABLE_PREFIX
-        # value: alist_
-        sync: false
+        value: alist_
+      - key: DB_SSL_MODE
+        value: true
       - key: CDN
-        # value: https://npm.elemecdn.com/alist-web@$version/dist
-        sync: false
+        value: https://npm.elemecdn.com/alist-web@$version/dist
